@@ -11,7 +11,7 @@
 
 extern uint64_t dispatch_benchmark(size_t count, void (^block)(void));
 
-static const NSInteger kPersonCount = 10000;
+static const NSInteger kPersonCount = 2000;
 
 NSArray *sortPersonsBubbleSort(NSArray *persons);
 NSArray *sortPersonsBucketSort(NSArray *persons);
@@ -24,11 +24,11 @@ int main(int argc, const char * argv[]) {
             persons[i] = [Person randomPerson];
         }
         
-//        __block NSArray *sortedBubble = nil;
-//        
-//        uint64_t t = dispatch_benchmark(3, ^{
-//            sortedBubble = sortPersonsBubbleSort([persons copy]);
-//        });
+        __block NSArray *sortedBubble = nil;
+        
+        uint64_t t = dispatch_benchmark(3, ^{
+            sortedBubble = sortPersonsBubbleSort([persons copy]);
+        });
         
         __block NSArray *sortedBucket = nil;
 
@@ -55,11 +55,11 @@ int main(int argc, const char * argv[]) {
             }];
         });
         
-//        if (!( (sortedBubble[333] == sortedBucket[333]) && (sortedComparator[333] && sortedBucket[333]))) {
-//            @throw [NSException exceptionWithName:@"Incorrect sorting" reason:@"Both algorithms should sort the same way!" userInfo:nil];
-//        }
-//        
-//        NSLog(@"[Bubble Sort] Avg. Runtime: %llu ms", t/1000000);
+        if (!( (sortedBubble[333] == sortedBucket[333]) && (sortedComparator[333] && sortedBucket[333]))) {
+            @throw [NSException exceptionWithName:@"Incorrect sorting" reason:@"Both algorithms should sort the same way!" userInfo:nil];
+        }
+        
+        NSLog(@"[Bubble Sort] Avg. Runtime: %llu ms", t/1000000);
         NSLog(@"[Bucket Sort] Avg. Runtime: %llu ms", tBucket/1000000);
         NSLog(@"[Comparator Sort] Avg. Runtime: %llu ms", tComparator/1000000);
     }
