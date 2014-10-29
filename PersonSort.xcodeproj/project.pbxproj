@@ -11,6 +11,9 @@
 		621369801A0102F900883060 /* Person.m in Sources */ = {isa = PBXBuildFile; fileRef = 6213697F1A0102F900883060 /* Person.m */; };
 		621369831A0109D600883060 /* firstnames.txt in CopyFiles */ = {isa = PBXBuildFile; fileRef = 621369811A01051F00883060 /* firstnames.txt */; };
 		621369841A0109D600883060 /* lastnames.txt in CopyFiles */ = {isa = PBXBuildFile; fileRef = 621369821A01051F00883060 /* lastnames.txt */; };
+		621369871A01274000883060 /* SortingAlgorithm.m in Sources */ = {isa = PBXBuildFile; fileRef = 621369861A01274000883060 /* SortingAlgorithm.m */; };
+		6213698A1A01279200883060 /* BubbleSort.m in Sources */ = {isa = PBXBuildFile; fileRef = 621369891A01279200883060 /* BubbleSort.m */; };
+		6213698D1A0127A500883060 /* BucketSort.m in Sources */ = {isa = PBXBuildFile; fileRef = 6213698C1A0127A500883060 /* BucketSort.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -34,6 +37,12 @@
 		6213697F1A0102F900883060 /* Person.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Person.m; sourceTree = "<group>"; };
 		621369811A01051F00883060 /* firstnames.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = firstnames.txt; sourceTree = SOURCE_ROOT; };
 		621369821A01051F00883060 /* lastnames.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = lastnames.txt; sourceTree = SOURCE_ROOT; };
+		621369851A01274000883060 /* SortingAlgorithm.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SortingAlgorithm.h; sourceTree = "<group>"; };
+		621369861A01274000883060 /* SortingAlgorithm.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SortingAlgorithm.m; sourceTree = "<group>"; };
+		621369881A01279200883060 /* BubbleSort.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BubbleSort.h; sourceTree = "<group>"; };
+		621369891A01279200883060 /* BubbleSort.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BubbleSort.m; sourceTree = "<group>"; };
+		6213698B1A0127A500883060 /* BucketSort.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BucketSort.h; sourceTree = "<group>"; };
+		6213698C1A0127A500883060 /* BucketSort.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BucketSort.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -71,6 +80,12 @@
 				621369771A0102B000883060 /* main.m */,
 				6213697E1A0102F900883060 /* Person.h */,
 				6213697F1A0102F900883060 /* Person.m */,
+				621369851A01274000883060 /* SortingAlgorithm.h */,
+				621369861A01274000883060 /* SortingAlgorithm.m */,
+				621369881A01279200883060 /* BubbleSort.h */,
+				621369891A01279200883060 /* BubbleSort.m */,
+				6213698B1A0127A500883060 /* BucketSort.h */,
+				6213698C1A0127A500883060 /* BucketSort.m */,
 			);
 			path = PersonSort;
 			sourceTree = "<group>";
@@ -133,6 +148,9 @@
 			files = (
 				621369801A0102F900883060 /* Person.m in Sources */,
 				621369781A0102B000883060 /* main.m in Sources */,
+				621369871A01274000883060 /* SortingAlgorithm.m in Sources */,
+				6213698D1A0127A500883060 /* BucketSort.m in Sources */,
+				6213698A1A01279200883060 /* BubbleSort.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
