@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>IDESourceControlProjectFavoriteDictionaryKey</key>
+	<false/>
+	<key>IDESourceControlProjectIdentifier</key>
+	<string>032FE89D-7A5A-4C98-9A79-8EF5C2021653</string>
+	<key>IDESourceControlProjectName</key>
+	<string>PersonSort</string>
+	<key>IDESourceControlProjectOriginsDictionary</key>
+	<dict>
+		<key>6ADD357D674DBBD7406BF6EB6F2AB452B7304E10</key>
+		<string>github.com:MakeGamesWithUs/PersonSort.git</string>
+	</dict>
+	<key>IDESourceControlProjectPath</key>
+	<string>PersonSort.xcodeproj</string>
+	<key>IDESourceControlProjectRelativeInstallPathDictionary</key>
+	<dict>
+		<key>6ADD357D674DBBD7406BF6EB6F2AB452B7304E10</key>
+		<string>../..</string>
+	</dict>
+	<key>IDESourceControlProjectURL</key>
+	<string>github.com:MakeGamesWithUs/PersonSort.git</string>
+	<key>IDESourceControlProjectVersion</key>
+	<integer>111</integer>
+	<key>IDESourceControlProjectWCCIdentifier</key>
+	<string>6ADD357D674DBBD7406BF6EB6F2AB452B7304E10</string>
+	<key>IDESourceControlProjectWCConfigurations</key>
+	<array>
+		<dict>
+			<key>IDESourceControlRepositoryExtensionIdentifierKey</key>
+			<string>public.vcs.git</string>
+			<key>IDESourceControlWCCIdentifierKey</key>
+			<string>6ADD357D674DBBD7406BF6EB6F2AB452B7304E10</string>
+			<key>IDESourceControlWCCName</key>
+			<string>PersonSort</string>
+		</dict>
+	</array>
+</dict>
+</plist>
