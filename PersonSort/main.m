@@ -59,7 +59,7 @@ int main(int argc, const char * argv[]) {
             
             int randomIndex = arc4random_uniform(kPersonCount);
             if (!(referenceSortResult[randomIndex] == sortResult[randomIndex])) {
-                @throw [NSException exceptionWithName:@"Incorrect sorting" reason:@"Both algorithms should sort the same way!" userInfo:nil];
+                @throw [NSException exceptionWithName:@"Incorrect sorting" reason:@"Your sort algorithm is not sorting correctly" userInfo:nil];
             }
             
             NSLog(@"[%@] Avg. Runtime: %llu ms", NSStringFromClass(klass),t/1000000);
