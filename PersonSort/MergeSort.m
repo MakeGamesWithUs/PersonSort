@@ -53,7 +53,7 @@
                 NSComparisonResult firstNameCompare = [[personLeft firstName] compare:[personRight firstName]];
                 if (firstNameCompare == NSOrderedDescending) {
                     leftSmaller = NO;
-                } else if (firstNameCompare == NSOrderedDescending) {
+                } else if (firstNameCompare == NSOrderedAscending) {
                     leftSmaller = YES;
                 }
             }

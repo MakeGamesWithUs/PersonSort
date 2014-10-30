@@ -8,6 +8,7 @@
 
 #import "BucketSort.h"
 #import "Person.h"
+#import "MergeSort.h"
 
 @implementation BucketSort
 
@@ -30,36 +31,7 @@
     
     for (NSNumber *key in sortedKeys) {
         NSMutableArray *persons = buckets[key];
-        
-        BOOL swapped = YES;
-        
-        while (swapped) {
-            swapped = NO;
-            
-            for (int i = 0; i+1 < [persons count]; i++) {
-                BOOL needsSwap = NO;
-                
-                NSComparisonResult lastNameCompare = [[persons[i] lastName] compare:[persons[i+1] lastName]];
-                
-                if (lastNameCompare == NSOrderedDescending) {
-                    needsSwap = YES;
-                } else if (lastNameCompare == NSOrderedSame) {
-                    NSComparisonResult firstNameCompare = [[persons[i] firstName] compare:[persons[i+1] firstName]];
-                    if (firstNameCompare == NSOrderedDescending) {
-                        needsSwap = YES;
-                    }
-                }
-                
-                if (needsSwap) {
-                    Person *temp = persons[i];
-                    persons[i] = persons[i+1];
-                    persons[i+1] = temp;
-                    swapped = YES;
-                }
-            }
-        }
-        
-        [sortedPersons addObjectsFromArray:persons];
+        [sortedPersons addObjectsFromArray:[MergeSort sort:[persons copy]]];
     }
     
     return sortedPersons;

@@ -8,6 +8,6 @@
 
 #import "SortingAlgorithm.h"
 
-@interface BubbleSort : SortingAlgorithm
+@interface BubbleSort : NSObject
 
 @end
