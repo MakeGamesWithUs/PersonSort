@@ -18,19 +18,24 @@
         buckets[@(i)] = [NSMutableArray array];
     }
     
-    // sort persons into buckets
+    // sort persons into buckets based on their age
     for (int i = 0; i < [persons count]; i++) {
         NSMutableArray *bucketArray = buckets[@([persons[i] age])];
         [bucketArray addObject:persons[i]];
     }
     
+    // create an array to store the sort results
     NSMutableArray *sortedPersons = [NSMutableArray array];
     
+    // get a sorted array of all bucket keys;
     NSArray *sortedKeys = [[buckets allKeys] sortedArrayUsingSelector:@selector(compare:)];
     
+    // iterate over all buckets
     for (NSNumber *key in sortedKeys) {
+        // get the persons for current bucket
         NSMutableArray *persons = buckets[key];
         
+        // sort the bucket using the bubble sort algorithm
         BOOL swapped = YES;
         
         while (swapped) {
@@ -59,6 +64,7 @@
             }
         }
         
+        // add the sorted bucket to the array holding the sort results
         [sortedPersons addObjectsFromArray:persons];
     }
     
