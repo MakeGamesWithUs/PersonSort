@@ -46,9 +46,7 @@
             
             // if a swap is necessarz; peform it here
             if (needsSwap) {
-                Person *temp = sortedPersons[i];
-                sortedPersons[i] = sortedPersons[i+1];
-                sortedPersons[i+1] = temp;
+                [sortedPersons exchangeObjectAtIndex:i withObjectAtIndex:i+1];
                 swapped = YES;
             }
         }

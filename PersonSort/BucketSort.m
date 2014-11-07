@@ -7,6 +7,7 @@
 //
 
 #import "BucketSort.h"
+#import "BubbleSort.h"
 #import "Person.h"
 
 @implementation BucketSort
@@ -36,33 +37,7 @@
         NSMutableArray *persons = buckets[key];
         
         // sort the bucket using the bubble sort algorithm
-        BOOL swapped = YES;
-        
-        while (swapped) {
-            swapped = NO;
-            
-            for (int i = 0; i+1 < [persons count]; i++) {
-                BOOL needsSwap = NO;
-                
-                NSComparisonResult lastNameCompare = [[persons[i] lastName] compare:[persons[i+1] lastName]];
-                
-                if (lastNameCompare == NSOrderedDescending) {
-                    needsSwap = YES;
-                } else if (lastNameCompare == NSOrderedSame) {
-                    NSComparisonResult firstNameCompare = [[persons[i] firstName] compare:[persons[i+1] firstName]];
-                    if (firstNameCompare == NSOrderedDescending) {
-                        needsSwap = YES;
-                    }
-                }
-                
-                if (needsSwap) {
-                    Person *temp = persons[i];
-                    persons[i] = persons[i+1];
-                    persons[i+1] = temp;
-                    swapped = YES;
-                }
-            }
-        }
+        persons = [[BubbleSort sort:persons] mutableCopy];
         
         // add the sorted bucket to the array holding the sort results
         [sortedPersons addObjectsFromArray:persons];
