@@ -16,11 +16,13 @@
     
     BOOL swapped = YES;
 
+    NSInteger n = [sortedPersons count];
+    
     while (swapped) {
         swapped = NO;
 
         // keep comparing all values to their neighbours until no swap occured in an entire iteration
-        for (int i = 0; i+1 < [sortedPersons count]; i++) {
+        for (int i = 0; i+1 < n; i++) {
             BOOL needsSwap = NO;
             
             // compare the element to its neighbour
@@ -50,6 +52,8 @@
                 swapped = YES;
             }
         }
+        
+        n = n-1;
         
         if (!swapped) {
             // if there was an entire round without swapping any elements, we are done sorting
