@@ -13,7 +13,7 @@
 
 extern uint64_t dispatch_benchmark(size_t count, void (^block)(void));
 
-static const NSInteger kPersonCount = 1000;
+static const NSInteger kPersonCount = 1001;
 
 int main(int argc, const char * argv[]) {
     @autoreleasepool {

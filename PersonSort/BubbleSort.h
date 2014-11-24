@@ -10,4 +10,6 @@
 
 @interface BubbleSort : SortingAlgorithm
 
++ (NSArray *)sort:(NSArray *)persons;
+
 @end
