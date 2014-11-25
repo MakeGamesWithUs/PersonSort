@@ -2,7 +2,7 @@
 
 Create a new class and make it a subclass of `SortingAlgorithm`. Then implement the `+ (NSArray *)sort:(NSArray *)persons;` method.
 
-The programm will automatically run and measure the performance for all of your sort algorithms. When they are completed it will print the results to the console. It will also check your sort results against reference results, if your algorithm sorts differently it will throw an exception.
+The program will automatically run and measure the performance for all of your sort algorithms. When they are completed it will print the results to the console. It will also check your sort results against reference results, if your algorithm sorts differently it will throw an exception.
 
 #Sorting criteria
 You need to sort by age then by last name and then by first name. This here is the reference implementation:
